@@ -47,6 +47,9 @@ const Body = () => {
         if (inputValue.length > 3) {
             setResp(Api(inputValue));
         }
+        if (inputValue.length <= 3) {
+            setResp(null);
+        }
     }, [inputValue]); // Ejecutamos este efecto cada vez que inputValue cambie
 
     const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
