@@ -1,9 +1,9 @@
-import Image from "next/image";
+import Body from '../components/body';
 
-export default function Home() {
+export default function Home() { 
   return (
     <main>
-      <div>Hola Lolo Car</div>
+      <Body />
     </main>
   );
 }
